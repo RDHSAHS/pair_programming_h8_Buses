@@ -1,0 +1,32 @@
+[
+    {
+        "firstName" : "Luis",
+        "lastName" : "Nashiruddin",
+        "dateOfBirth" : "1990-10-22",
+        "UserId" : 1
+    },
+    {
+        "firstName" : "Umi",
+        "lastName" : "Mayasari",
+        "dateOfBirth" : "1999-04-10",
+        "UserId" : 2
+    },
+    {
+        "firstName" : "Aris",
+        "lastName" : "Gunarto",
+        "dateOfBirth" : "1995-09-26",
+        "UserId" : 3
+    },
+    {
+        "firstName" : "Bagus",
+        "lastName" : "Prabowo",
+        "dateOfBirth" : "1995-03=02",
+        "UserId" : 4
+    },
+    {
+        "firstName" : "Bakti",
+        "lastName" : "Pangestu",
+        "dateOfBirth" : "1993-05=02",
+        "UserId" : 5
+    }
+]

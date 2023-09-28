@@ -1,0 +1,42 @@
+[
+    {
+        "name" : "Pelangi",
+        "plateNumber" : "B 1234 IKJ",
+        "category" : "Ekonomi",
+        "destination" : "Malang",
+        "departure" : "Surabaya",
+        "imageURL" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0YXfE0qZqhY8KUuB1nzVqHtvd01VmH73okQ&usqp=CAU"
+    },
+    {
+        "name" : "Simpati Star",
+        "plateNumber" : "B 2345 ICA",
+        "category" : "Bisnis",
+        "destination" : "Bandung",
+        "departure" : "Jakarta",
+        "imageURL" : "https://admin.easywebsites.co.uk/inc//shawburnexecutivetravel.com/images/cmsGallery/136Rc41diUdOzyx.jpg"
+    },
+    {
+        "name" : "Arwana    ",
+        "plateNumber" : "B 5675 AED",
+        "category" : "VIP",
+        "destination" : "Banyuwangi",
+        "departure" : "Palembang",
+        "imageURL" : "https://gyepestrans.sk/wp-content/uploads/2023/02/gyepestrans-neoplan-cityliner-vip-class.jpg"
+    },
+    {
+        "name" : "Pelangi",
+        "plateNumber" : "B 7678 UJH",
+        "category" : "Ekonomi",
+        "destination" : "Surabaya",
+        "departure" : "Pekanbaru",
+        "imageURL" : "https://cdn1-production-images-kly.akamaized.net/gLuUO5GZBdc7X_1vmUsv6IJAHLE=/1200x675/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/4168732/original/029466900_1663919230-Bus_Pariwisata.jpg"
+    },
+    {
+        "name" : "Simpati Star",
+        "plateNumber" : "B 8765 KJM",
+        "category" : "Bisnis",
+        "destination" : "Jakarta",
+        "departure" : "Surabaya",
+        "imageURL" : "https://www.nishitetsu.jp/userfiles/page/LMzJO7wT56ehtH1QSy1H.jpg"
+    }
+]
