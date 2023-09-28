@@ -8,6 +8,7 @@ module.exports = {
       return {
         username: el.username,
         password: el.password,
+        role: el.role,
         createdAt : new Date(),
         updatedAt : new Date()
       }

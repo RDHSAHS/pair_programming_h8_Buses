@@ -28,3 +28,67 @@ li a:hover {
   background-color: rgb(0, 98, 128);
   border-radius: 7px;
 }
+
+.register-form,
+.login-form {
+  font-size: 1.33vw;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the form elements */
+}
+
+.register-form h2,
+.login-form h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  text-align: left; /* Align labels to the left */
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.form-group input {
+  width: calc(100% - 22px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-group select {
+  width: 50%; /* Set selector width to 50% */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px; /* Match font size with other inputs */
+  appearance: none; /* Remove default arrow icon */
+  background-image: url('data:image/svg+xml;utf8,<svg fill="%23454545" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Add custom arrow icon */
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+  margin-bottom: 15px;
+}
+
+button[type="submit"] {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(0, 98, 128);
+}
