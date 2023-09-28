@@ -1,0 +1,39 @@
+[
+    {
+        "code" : "315-A2023-09-29",
+        "price" : "350000",
+        "seatNumber" : "15-A",
+        "departureDate" : "2023-09-29",
+        "time" : "08.00",
+        "BusId" : 3,
+        "PassengerId" : 2
+    },
+    {
+        "code" : "210-B2023-09-29",
+        "price" : "250000",
+        "seatNumber" : "10-B",
+        "departureDate" : "2023-09-29",
+        "time" : "13.00",
+        "BusId" : 2,
+        "PassengerId" : 4
+    },
+    {
+        "code" : "120-B2023-09-29",
+        "price" : "100000",
+        "seatNumber" : "05-B",
+        "departureDate" : "2023-09-29",
+        "time" : "07.00",
+        "BusId" : 1,
+        "PassengerId" : 1
+    },
+    {
+        "code" : "512-A2023-09-29",
+        "price" : "250000",
+        "seatNumber" : "07-A",
+        "departureDate" : "2023-09-29",
+        "time" : "10.00",
+        "BusId" : 5,
+        "PassengerId" : 3
+    }
+
+]
