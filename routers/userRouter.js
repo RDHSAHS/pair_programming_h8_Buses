@@ -3,8 +3,8 @@ const Controller = require('../controllers/controller')
 
 const user = express.Router()
 
-// user.get('/', Controller.showUser)
-user.get('/invoice', Controller.showInvoice)
+user.get('/', Controller.showHome)
+user.get('/register', Controller.registerForm)
 
 
 
