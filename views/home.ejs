@@ -13,10 +13,26 @@
     <li><a href="/">Home</a></li>
     <li><a href="#">Bus List</a></li>
     <li><a href="#">Our Company</a></li>
+    <li><a href="/user/passengers">Passenger List</a></li>
   </ul>
 
   <!-- FORM -->
-  
+  <h1>Search Tickets</h1>
+    <form action="/bus/result" method="POST"> 
+        <label for="departure">Departure:</label>
+        <input type="text" name="departure" id="departure">
+        
+        <label for="destination">Destination:</label>
+        <input type="text" name="destination" id="destination">
+        
+        <label for="maxSeat">Seat:</label>
+        <input type="number" name="maxSeat" id="maxSeat">
+        
+        <label for="departureDate">Date:</label>
+        <input type="date" name="departureDate" id="departureDate">
+        
+        <a href="/result"><button type="submit">Search</button></a>
+    </form>
   </nav>
 </body>
 </html>

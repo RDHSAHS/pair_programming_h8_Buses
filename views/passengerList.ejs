@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Passenger List</h1>
+    <table border="1" align="center">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>Bus Code</th>
+                <th>Seat Number</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <% data.forEach(el=> { %>
+        <tbody align="center">
+                <tr>
+                    <td>
+                        <%= el.firstName%> <%= el.lastName %>
+                    </td>
+                    <td>
+                        <%= el.formattedDate %>
+                    </td>
+                    <td>
+                        <%= el.code %>
+                    </td>
+                    <td>    
+                        <%= el.seatNumber %>
+                    </td>
+                    <td class="row">
+                        <a href="/user/passengers/<%= el.id %>/edit"><button>Edit</button></a>
+                        <a href=""><button>delete</button></a>
+                    </td>
+                </tr>
+        </tbody>
+        <% }); %>
+    </table>
+</body>
+</html>

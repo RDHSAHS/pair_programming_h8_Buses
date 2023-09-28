@@ -33,10 +33,10 @@
 </head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-<h1><a href="/user/<%= data.id %>/profile" style="color: black; font-size: x-large        ;">User Profile</a></h1>
-<h2 style="text-align: center;">User Profile</h2>
+<h1>Passenger List <a href="/user/<%= data.id %>/profile" style="color: black; font-size: medium;">Update Profile</a></h1>
+<h2 style="text-align: center;">Update Profile</h2>
 <div class="container mt-4">
-    <form action="/user/<%= data.id %>/profile" method="post">
+    <form action="/user/<%= data.id %>/profile/edit" method="post">
         <div class="row">
           <div class="col-6">
             <label for="firstName">First Name</label>
@@ -51,16 +51,16 @@ integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2
             <input type="date" class="form-control" name="dateOfBirth" value="<%= data.dateOfBirth %>">
         </div>
         <div>
-          <label for="username">Username</label>
-          <input type="text" class="form-control" name="username" value="<%= data.username %>">
-      </div>
-      <div>
-        <label for="password">Password</label>
-        <input type="text" class="form-control" name="password" value="<%= data.password %>">
-    </div>
+            <label for="username">Username</label>
+            <input type="date" class="form-control" name="username" value="<%= data.username %>">
+        </div>
         <div>
-            <a href="/user/<%= data.id %>/profile/edit">
-                <button class="btn btn-primary" style="margin-top: 10px;">Edit Profile</button>
+            <label for="password">Password</label>
+            <input type="date" class="form-control" name="password" value="<%= data.password %>">
+        </div>
+        <div>
+            <a href="/user/<%= data.id %>/profile">
+                <button class="btn btn-primary" style="margin-top: 10px;">Update Profile</button>
             </a>
         </div>
     </form>

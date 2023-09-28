@@ -11,8 +11,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Bus.belongsToMany(models.Passenger, { through: 'Ticket' });
       Bus.hasMany(models.Ticket)
     }
+    
   }
   Bus.init({
     name: DataTypes.STRING,
@@ -20,7 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     category: DataTypes.STRING,
     destination: DataTypes.STRING,
     departure: DataTypes.STRING,
-    imageURL: DataTypes.STRING
+    imageURL: DataTypes.STRING,
+    maxSeat: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Bus',

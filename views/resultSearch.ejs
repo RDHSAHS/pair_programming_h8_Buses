@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+</head>
+<body>
+  <ul>
+    <form action="/bus/result" method="post">
+        <% data.forEach((el) => { %>
+          <li>
+            <h2><%= el.departure %> - <%= el.destination %></h2>
+            <p><%= el.imageURL %></p>
+            <p><%= el.name %></p>
+            <p>Departure: <%= el.departure %></p>
+            <p>Destination: <%= el.destination %></p>
+            <p>Departure Date: <%= el.departureDate %></p>
+            <% el.Tickets.forEach((ticket) => { %>
+              <p>Rp<%= ticket.price %>/seat</p>
+            <% }); %>
+          </li>
+        <% }); %>
+
+    </form>
+
+  </ul>
+</body>
+</html>
