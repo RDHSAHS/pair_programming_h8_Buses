@@ -9,6 +9,7 @@ user.get('/register', UserController.registerForm)
 user.post('/register', UserController.addUser)
 user.get('/login', UserController.loginForm)
 user.post('/login', UserController.postLogin)
+user.get('/logout', UserController.getLogOut)
 
 const isLoggedIn = function(req, res, next) {
   if (!req.session.userId) {

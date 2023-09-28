@@ -48,6 +48,13 @@ class UserController {
         res.send(err.message)
       })
   }
+
+  static getLogOut(req, res) {
+    req.session.destroy(err => {
+      if (err) return res.send(err)
+      res.redirect('/user/login')
+    })
+  }
 }
 
 module.exports = UserController
