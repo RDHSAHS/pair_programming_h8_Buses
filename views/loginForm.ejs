@@ -20,6 +20,9 @@
     <!-- LOGIN FORM -->
     <div class="login-form">
       <h2>Login</h2>
+      <% if (error) {%>
+        <p><%= error %></p>
+        <% }%>
       <form action="/user/login" method="post">
         <div class="form-group">
           <label for="username">Username:</label>

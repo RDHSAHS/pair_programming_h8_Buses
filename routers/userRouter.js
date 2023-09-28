@@ -10,6 +10,24 @@ user.post('/register', UserController.addUser)
 user.get('/login', UserController.loginForm)
 user.post('/login', UserController.postLogin)
 
+const isLoggedIn = function(req, res, next) {
+  if (!req.session.userId) {
+    const error = `Please Login First`
+    res.redirect(`/user/login?error=${error}`)
+  } else {
+    next()
+  }
+}
+
+const isAdmin = function(req, res, next) {
+  if (req.session.userId && req.session.role !== `admin`) {
+    const error = `You have no access`
+    res.redirect(`/user/login?error=${error}`)
+  } else {
+    next()
+  }
+}
+
 
 
 module.exports = user

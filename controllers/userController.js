@@ -19,7 +19,9 @@ class UserController {
   }
 
   static loginForm(req, res) {
-    res.render('loginForm')
+    const { error } = req.query
+
+    res.render('loginForm', { error })
   }
   static postLogin(req, res) {
     const { username, password } = req.body
@@ -30,6 +32,8 @@ class UserController {
         if (user) {
           const isValidPassword = bcryptjs.compareSync(password, user.password)
           if (isValidPassword) {
+            req.session.userId = user.id
+            req.session.role = user.role
             return res.redirect('/')
           } else {
             const error = 'invalid password'
