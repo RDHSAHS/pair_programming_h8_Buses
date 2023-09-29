@@ -8,7 +8,10 @@ module.exports = (sequelize, DataTypes) => {
       Bus.belongsToMany(models.Passenger, { through: 'Ticket' });
       Bus.hasMany(models.Ticket)
     }
-    
+  seatAvailable() {
+    let availableSeat = maxSeat-1
+    return availableSeat
+  }
   }
   Bus.init({
     name: DataTypes.STRING,
