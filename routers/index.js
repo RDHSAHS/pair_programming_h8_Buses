@@ -7,7 +7,6 @@ const router = express.Router()
 
 router.get('/', Controller.showHome)
 
-
 router.use('/user', userRouter)
 router.use('/bus', busRouter)
 

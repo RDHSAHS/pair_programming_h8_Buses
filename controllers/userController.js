@@ -36,11 +36,11 @@ class UserController {
             req.session.role = user.role
             return res.redirect('/')
           } else {
-            const error = 'invalid password'
+            const error = 'INVALID PASSWORD'
             return res.redirect(`/user/login?error=${error}`)
           }
         } else {
-          const error = 'invalid username'
+          const error = 'INVALID USERNAME'
           return res.redirect(`/user/login?error=${error}`)
         }
       })

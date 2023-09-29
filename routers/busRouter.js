@@ -3,8 +3,7 @@ const Controller = require('../controllers/controller')
 
 const bus = express.Router()
 
-
-bus.get('/', Controller.showHome)
+bus.post('/result', Controller.searchBus)
 
 
 module.exports = bus
